@@ -1,0 +1,111 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+  @font-face {
+    font-family:'Roboto Condensed', sans-serif;
+    src: local('RobotoCondensed-Light'), url(../fonts/RobotoCondensed-Light.ttf) format('truetype');
+    /* other formats include: 'woff2', 'truetype, 'opentype',
+                              'embedded-opentype', and 'svg' */
+  }
+  @font-face {
+    font-family: 'Square Peg', cursive;
+    src: local('SquarePeg-Regular') url(../fonts/SquarePeg-Regular.ttf) format('truetype');
+    /* other formats include: 'woff2', 'truetype, 'opentype',
+                              'embedded-opentype', and 'svg' */
+  }
+  ul{
+      margin-top: 10px;
+      width:70%;
+      list-style: none;
+      
+      display:flex;
+      justify-content: space-evenly;
+      flex-direction: row;
+  }
+  .nav-bar {
+      position: fixed;
+      top:0px;
+      margin: 0px;
+      width:100%;
+      text-decoration: none;
+      display: flex;
+      justify-content: space-evenly;
+      height: 70px;
+      flex-direction: row;
+      min-height: 8vh;
+      color: #D0EEEA;
+      font-family: 'Roboto Condensed', sans-serif;
+      /* font:local('RobotoCondensed-Light'); */
+      
+      
+      background-color: #6FB8AE;
+    }
+    .logo {
+      font-family: 'Square Peg', cursive;
+      /* font:local('SquarePeg-Regular'); */
+      margin-top: 10px;
+      color: #D0EEEA;
+      font-size: 25px;
+    }
+    .burger {
+      display: none;
+      cursor: pointer;
+    }
+    .burger div {
+      width: 25px;
+      height: 3px;
+      margin: 5px;
+      background-color: #D0EEEA;
+    }
+    @media screen and (max-width: 768px) {
+      body {
+        overflow-x: hidden;
+      }
+    
+      .burger {
+        display: block;
+      }
+      .active {
+        transform: translateX(0%);
+      }
+    }
+    @media screen and (max-width: 1024px) {
+    
+    }
+    @keyframes navLinks {
+      from {
+        opacity: 0;
+        transform: translateX(50%);
+      }
+      to {
+        opacity: 1;
+        transform: translateX(0px);
+      }
+    }
+    .sticky {
+      position: fixed;
+      text-decoration: none;
+      display: flex;
+      justify-content: space-around;
+      
+      flex-direction: row;
+      min-height: 8vh;
+      color: #D0EEEA;
+      font-family: "Poppins", sans-serif;
+      background-color: #6FB8AE;
+      
+      top: 0;
+      width: 100%;
+      box-shadow: 0 0 10px #ccc;
+    }
+    .sticky + .site {
+      padding-top: 102px;
+    }
+    .link{
+      text-decoration: none;
+      color: #D0EEEA;
+      font-family: 'Roboto Condensed', sans-serif;
+
+    }

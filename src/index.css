@@ -1,13 +1,39 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+
+}
+@font-face {
+  font-family:'Roboto Condensed', sans-serif;
+  src: local('RobotoCondensed-Light'), url(./fonts/RobotoCondensed-Light.ttf) format('truetype');
+  /* other formats include: 'woff2', 'truetype, 'opentype',
+                            'embedded-opentype', and 'svg' */
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.home{
+  background-image: url(https://img.freepik.com/free-photo/3d-geometric-abstract-background_1048-9868.jpg?t=st=1650807232~exp=1650807832~hmac=f37c62d699377777c9ab967624b8190207b7cb68cb6182a52c24b0c236f2ed3e&w=900) ;
+  background-color: #D0EEEA;
+  width:65%;
+    height:500px;
+    margin-top: 100px;
+    margin-left: 200px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color:#6FB8AE;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-shadow: 2px 2px #4B4E4E;
+    font-size: 50px;
+
+
+}
+.home-box{
+  margin: 0;
+  width: 100%;
+  height:500px;
+  
+}
+.home:hover{
+  /* opacity:0.7; */
+  filter: brightness(1.2);
 }
