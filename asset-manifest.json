@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/shop-front/static/css/main.a25ed1ff.css",
+    "main.js": "/shop-front/static/js/main.f229531a.js",
+    "static/js/787.e3848d28.chunk.js": "/shop-front/static/js/787.e3848d28.chunk.js",
+    "static/media/RobotoCondensed-Light.ttf": "/shop-front/static/media/RobotoCondensed-Light.315e30bd24f609c6f8d1.ttf",
+    "static/media/SquarePeg-Regular.ttf": "/shop-front/static/media/SquarePeg-Regular.381be1381bbd94205c6f.ttf",
+    "index.html": "/shop-front/index.html",
+    "main.a25ed1ff.css.map": "/shop-front/static/css/main.a25ed1ff.css.map",
+    "main.f229531a.js.map": "/shop-front/static/js/main.f229531a.js.map",
+    "787.e3848d28.chunk.js.map": "/shop-front/static/js/787.e3848d28.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a25ed1ff.css",
+    "static/js/main.f229531a.js"
+  ]
+}
