@@ -7,7 +7,7 @@ class Home extends Component{
 
         return <div className='home-box'>
                     <div className='home'>
-                    <p >Checkout our product selection in a menu above!</p>
+                    <p>Check out our product selection in a menu above!</p>
                 </div>
         </div>
     }

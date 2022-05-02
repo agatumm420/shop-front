@@ -2,7 +2,7 @@
   "name": "shopping2",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://agatumm420.github.io/shop-front/",
+  "homepage": "https://agatumm420.github.io/shop-front",
   "dependencies": {
     "@fortawesome/free-solid-svg-icons": "^6.1.1",
     "@fortawesome/react-fontawesome": "^0.1.18",

@@ -28,8 +28,7 @@ const Routez = (props) => {
                     <Route path="checkout/*" element={<Checkout items={JSON.parse(localStorage.getItem("items"))}/>}/>
 
                     
-                 
-                
+        
                  
                </Routes>
            </BrowserRouter>
