@@ -25,11 +25,11 @@ return (
       <nav  className='nav-bar' >
          <div className='logo'>{this.props.name}</div>
          <ul>
-            <li><a className='link' href='/*'> Home</a></li>
+            <li><a className='link' href='/shop-front/'> Home</a></li>
             
-            <li><a className='link' href='/perfumes/*'> Perfumes </a></li>
-            <li><a className='link' href='/skincare/*'> Skincare </a></li>
-            <li><a className='link' href='/accesories/*'> Accesories </a></li>
+            <li><a className='link' href='/shop-front/perfumes/'> Perfumes </a></li>
+            <li><a className='link' href='/shop-front/skincare/'> Skincare </a></li>
+            <li><a className='link' href='/shop-front/accesories/'> Accesories </a></li>
            
            
 
