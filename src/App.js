@@ -43,11 +43,11 @@ const ProductContext=React.createContext({src:"", name:"", price:""});
         
         <BrowserRouter className='site' >
                <Routes>
-                    <Route  extact path="*" element={<Home/>}/>
-                    <Route path="perfumes/*" element={<Shop sendDataToParent={onClick} items={perfumes} title="Perfumes"/>}/>
-                    <Route path="skincare/*" element={<Shop sendDataToParent={onClick} items={skincare} title="Skincare"/>}/>
-                    <Route path="accesories/*" element={<Shop sendDataToParent={onClick} items={accesories} title="Accesories"/>}/>
-                    <Route path="checkout/*" element={<Checkout items={JSON.parse(localStorage.getItem("items"))}/>}/>
+                    <Route  exact path="*" element={<Home/>}/>
+                    <Route path="/perfumes/*" element={<Shop sendDataToParent={onClick} items={perfumes} title="Perfumes"/>}/>
+                    <Route path="/skincare/*" element={<Shop sendDataToParent={onClick} items={skincare} title="Skincare"/>}/>
+                    <Route path="/accesories/*" element={<Shop sendDataToParent={onClick} items={accesories} title="Accesories"/>}/>
+                    <Route path="/checkout/*" element={<Checkout items={JSON.parse(localStorage.getItem("items"))}/>}/>
 
                     
                  
