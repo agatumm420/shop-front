@@ -1,9 +1,9 @@
 import "./App.css";
 import React, { useState } from "react";
 import Header from "./components/navbar";
-import { BrowserRouter, Route } from "react-router-dom";
+import { HashRouter as Router, Route } from "react-router-dom";
 import { Routes } from "react-router-dom";
-
+import Footer from "./components/footer";
 import Home from "./components/home";
 import Shop from "./components/shop";
 
@@ -36,7 +36,7 @@ const App = () => {
         }}
       >
         <Header
-          name="Shoppy"
+          name="Shopp"
           source={src}
           itemName={name}
           price={price}
@@ -44,12 +44,12 @@ const App = () => {
         />
       </ProductContext.Provider>
 
-      <BrowserRouter className="site">
+      <Router basename="/" className="site">
         <Routes>
-          <Route exact path="/shop-front" element={<Home />} />
+          <Route exact path="/" element={<Home />} />
           <Route
             exact
-            path="/shop-front/perfumes"
+            path="/perfumes"
             element={
               <Shop
                 sendDataToParent={onClick}
@@ -60,7 +60,7 @@ const App = () => {
           />
           <Route
             exact
-            path="/shop-front/skincare"
+            path="/skincare"
             element={
               <Shop
                 sendDataToParent={onClick}
@@ -71,7 +71,7 @@ const App = () => {
           />
           <Route
             exact
-            path="/shop-front/accesories"
+            path="/accesories"
             element={
               <Shop
                 sendDataToParent={onClick}
@@ -82,13 +82,14 @@ const App = () => {
           />
           <Route
             exact
-            path="/shop-front/checkout"
+            path="/checkout"
             element={
               <Checkout items={JSON.parse(localStorage.getItem("items"))} />
             }
           />
         </Routes>
-      </BrowserRouter>
+      </Router>
+      <Footer />
     </div>
   );
 };
