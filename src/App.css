@@ -101,6 +101,7 @@
   justify-content: center;
   flex-direction: column;
   width: 1fr;
+  z-index: 0;
 }
 
 .shop-item:hover {
@@ -180,9 +181,11 @@
 .App {
   display: flex;
   flex-direction: column;
+  max-width: 1440px;
 }
 
 .footer {
+
   margin: 0;
   align-self: flex-end;
   width: 100%;
@@ -203,6 +206,23 @@
   font-family: "Roboto Condensed";
   font-size: 15px;
   color: var(--gray-blue);
+}
+
+.name {
+  font-family: "Roboto Condensed", sans-serif;
+  color: var(--gray);
+  font-size: 15px;
+
+  margin-left: 25px;
+
+}
+
+.price {
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 15px;
+  color: var(--gray);
+  margin-left: 40px;
+
 }
 
 @keyframes spin {
