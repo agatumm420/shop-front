@@ -1,17 +1,22 @@
 {
   "files": {
-    "main.css": "/shop-front/static/css/main.a25ed1ff.css",
-    "main.js": "/shop-front/static/js/main.1b0ab024.js",
+    "main.css": "/shop-front/static/css/main.7c312a29.css",
+    "main.js": "/shop-front/static/js/main.fd463e00.js",
     "static/js/787.e3848d28.chunk.js": "/shop-front/static/js/787.e3848d28.chunk.js",
     "static/media/RobotoCondensed-Light.ttf": "/shop-front/static/media/RobotoCondensed-Light.315e30bd24f609c6f8d1.ttf",
     "static/media/SquarePeg-Regular.ttf": "/shop-front/static/media/SquarePeg-Regular.381be1381bbd94205c6f.ttf",
+    "static/media/HeroLight-Regular.woff": "/shop-front/static/media/HeroLight-Regular.935b782ae8f122e1c19b.woff",
+    "static/media/hero-bold-webfont.woff": "/shop-front/static/media/hero-bold-webfont.f98c3d0c34564fa0245e.woff",
+    "static/media/hero-regular-webfont.woff": "/shop-front/static/media/hero-regular-webfont.982aad51b62de663d213.woff",
+    "static/media/hero-bold-webfont.woff2": "/shop-front/static/media/hero-bold-webfont.ed3fd92c112a9b592787.woff2",
+    "static/media/hero-regular-webfont.woff2": "/shop-front/static/media/hero-regular-webfont.2e12654052ad7eaa75a9.woff2",
     "index.html": "/shop-front/index.html",
-    "main.a25ed1ff.css.map": "/shop-front/static/css/main.a25ed1ff.css.map",
-    "main.1b0ab024.js.map": "/shop-front/static/js/main.1b0ab024.js.map",
+    "main.7c312a29.css.map": "/shop-front/static/css/main.7c312a29.css.map",
+    "main.fd463e00.js.map": "/shop-front/static/js/main.fd463e00.js.map",
     "787.e3848d28.chunk.js.map": "/shop-front/static/js/787.e3848d28.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a25ed1ff.css",
-    "static/js/main.1b0ab024.js"
+    "static/css/main.7c312a29.css",
+    "static/js/main.fd463e00.js"
   ]
 }
