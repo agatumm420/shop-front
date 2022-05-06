@@ -1,72 +1,63 @@
-import React, { Component } from "react";
+import React, { Component, useState } from "react";
 import "../styles/header.css";
 import Cart from "./cart";
 import { Link, Navigate, Router } from "react-router-dom";
 
 const show = false;
-class Header extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      username: this.props.username,
-      scroll: this.props.scroll,
-    };
-  }
+const Header = (props) => {
+  const [clicked, setClicked] = useState(false);
 
-  Change = (field, value) => {
-    this.setState({ [field]: value });
-    this.props.onChange(field, value);
+  const Clicked = () => {
+    setClicked(!clicked);
   };
 
-  render() {
-    return (
-      <nav className="nav-bar">
-        <div className="logo">{this.props.name}</div>
-        <div className="second-half">
-          <ul>
-            <li>
-              <a className="link" href="/shop-front/#/">
-                {" "}
-                Home
-              </a>
-            </li>
+  return (
+    <nav className="nav-bar">
+      <div className="logo">{props.name}</div>
+      <div className="second-half">
+        <ul className={clicked ? "nav-active" : "nav-links"}>
+          <li>
+            <a className="link" href="/shop-front/#/">
+              {" "}
+              Home
+            </a>
+          </li>
 
-            <li>
-              <a className="link" href="/shop-front/#/perfumes">
-                {" "}
-                Perfumes{" "}
-              </a>
-            </li>
-            <li>
-              <a className="link" href="/shop-front/#/skincare">
-                {" "}
-                Skincare{" "}
-              </a>
-            </li>
-            <li>
-              <a className="link" href="/shop-front/#/accesories">
-                {" "}
-                Accesories{" "}
-              </a>
-            </li>
-          </ul>
-          <div className="cart-div">
-            <Cart
-              source={this.props.source}
-              name={this.props.itemName}
-              price={this.props.price}
-              quantity={this.props.quantity}
-            />
-          </div>
-
-          <div className="burger">
-            <div className="line1"></div>
-            <div className="line2"></div>
-            <div className="line3"></div>
-          </div>
+          <li>
+            <a className="link" href="/shop-front/#/perfumes">
+              {" "}
+              Perfumes{" "}
+            </a>
+          </li>
+          <li>
+            <a className="link" href="/shop-front/#/skincare">
+              {" "}
+              Skincare{" "}
+            </a>
+          </li>
+          <li>
+            <a className="link" href="/shop-front/#/accesories">
+              {" "}
+              Accesories{" "}
+            </a>
+          </li>
+        </ul>
+        <div className="cart-div">
+          <Cart
+            source={props.source}
+            name={props.itemName}
+            price={props.price}
+            quantity={props.quantity}
+          />
         </div>
-      </nav>
-    );
-  }
-}
+
+        <div className="burger" onClick={Clicked}>
+          <div className="line1"></div>
+          <div className="line2"></div>
+          <div className="line3"></div>
+        </div>
+      </div>
+    </nav>
+  );
+};
 export default Header;
